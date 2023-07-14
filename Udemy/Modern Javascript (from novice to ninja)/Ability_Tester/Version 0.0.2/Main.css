@@ -33,6 +33,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 .app__navbar_container {
     height: 100%;
@@ -66,7 +67,7 @@ h1 {
     color:rgb(10, 110, 110)y;
 }
 .app__header {
-    height: 540px;
+    height: max-content;
     width: 100%;
     padding: 40 0px;
     margin-top: 60px;
@@ -141,15 +142,13 @@ h1 {
 
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
     gap: 20px;
 }
 .item {
-    height: 350px;
-
+    width: 100%;
     display:flex;
-    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -168,7 +167,7 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .item img {
-    height: 47%;
+    height: 50px;
     min-height: 158px;
     margin-top: 0;
     padding: 40 0 8 0px;
@@ -185,6 +184,7 @@ h1 {
 .item_description p {
     font-size: 1.4em;
     color: rgb(78, 78, 78);
+    padding-bottom: 20px;
 }
 .item_end {
     min-width: 274px;
@@ -192,7 +192,6 @@ h1 {
 }
 .item_end img {
     height: 50%;
-    margin-bottom: 15px;
 }
 .app__footer {
     height: max-content;
